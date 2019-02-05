@@ -15,6 +15,7 @@
  */
 
 package jp.co.cyberagent.android.gpuimage.filter;
+import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilterGroup;
 
 public class GPUImageTwoPassFilter extends GPUImageFilterGroup {
     public GPUImageTwoPassFilter(String firstVertexShader, String firstFragmentShader,

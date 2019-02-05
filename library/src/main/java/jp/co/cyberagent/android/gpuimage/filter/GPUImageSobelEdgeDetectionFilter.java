@@ -15,7 +15,7 @@
  */
 
 package jp.co.cyberagent.android.gpuimage.filter;
-
+import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilterGroup;
 /**
  * Applies sobel edge detection on the image.
  */
