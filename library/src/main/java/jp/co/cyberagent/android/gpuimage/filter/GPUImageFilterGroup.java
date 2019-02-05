@@ -29,6 +29,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilter;
+import jp.co.cyberagent.android.gpuimage.util.Rotation;
+
 
 import static jp.co.cyberagent.android.gpuimage.GPUImageRenderer.CUBE;
 import static jp.co.cyberagent.android.gpuimage.util.TextureRotationUtil.TEXTURE_NO_ROTATION;
@@ -120,7 +122,7 @@ public class GPUImageFilterGroup extends GPUImageFilter {
         super.onInit();
         synchronized (mFilters) {
             for (GPUImageFilter filter : mFilters) {
-                filter.init();
+                filter.ifNeedInit();
             }
         }
     }

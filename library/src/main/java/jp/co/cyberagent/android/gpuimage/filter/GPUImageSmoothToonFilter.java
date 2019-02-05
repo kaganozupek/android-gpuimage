@@ -37,7 +37,7 @@ public class GPUImageSmoothToonFilter extends GPUImageFilterGroup {
         toonFilter = new GPUImageToonFilter();
         addFilter(toonFilter);
 
-        getFilters().add(blurFilter);
+        addFilter(blurFilter);
     }
 
     @Override
